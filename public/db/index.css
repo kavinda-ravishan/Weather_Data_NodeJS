@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* <--- I added this */
+  align-items: center; /* <--- Change here */
+}
+
+p {
+  padding: 10px;
+  background-color: cadetblue;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Location</title>
+  </head>
+  <body>
+    <h1 class="title">Location</h1>
+    <div class="links"><a href="/">enter</a> | <a href="/db">list</a></div>
+    <h3 class="pos">
+      Latitude : <span id="latitude">0.0</span>&deg;, Longitude :
+      <span id="longitude">0.0</span>&deg;
+    </h3>
+    <div class="send">
+      <button class="sendBtn" onclick="sendData()">Send to database</button>
+      <button class="sendBtn" onclick="sendLocationForWeatherData()">
+        Get Weather Data
+      </button>
+      <button class="sendBtn" onclick="sendLocationForAirQualityData()">
+        Get Air Quality data
+      </button>
+    </div>
+    <p class="res"><span id="response"></span></p>
+    <script src="./index.js"></script>
+  </body>
+</html>
